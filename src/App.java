@@ -1,9 +1,12 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Inventory inventory = new Inventory();
         
-        inventory.addItem("Apple", 5, "Fuji");
-        inventory.addItem("Sword", 1, 10, "Melee");
-        inventory.displayInventory();
+        Toyota myToyota = new Toyota("Corolla", 2021);
+        Dashboard dashboard = new Dashboard();
+        dashboard.addCar(myToyota);
+        dashboard.displayCars();
+
+        myToyota.drive();
+        
     }
 }
