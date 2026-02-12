@@ -17,7 +17,8 @@ public class Weapon extends Item {
     }
 
     @Override
-    public String toString() {
-        return super.toString() + " (Damage: " + damage + ", Type: " + type + ")";
+    public void displayInfo() {
+        System.out.println(getName() + " (Quantity: " + getQuantity() + ", Damage: " + damage + ", Type: " + type + ")");
     }
 }
+    
